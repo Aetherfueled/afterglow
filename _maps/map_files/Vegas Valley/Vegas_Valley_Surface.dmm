@@ -11252,6 +11252,7 @@
 /area/f13/brotherhood)
 "dAB" = (
 /obj/structure/wreck/trash/one_tire,
+/obj/structure/tires/two,
 /turf/open/floor/plating/f13/inside/gravel,
 /area/f13/wasteland/town)
 "dAD" = (
@@ -12438,6 +12439,10 @@
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
+"dTo" = (
+/obj/structure/wreck/trash/engine,
+/turf/open/floor/plating/f13/inside/gravel,
+/area/f13/wasteland/town)
 "dTu" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -16703,6 +16708,19 @@
 	icon_state = "horizontalinnermain1"
 	},
 /area/f13/wasteland)
+"fll" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	icon_state = "manhole_open";
+	id = "town_lair";
+	level = 1
+	},
+/obj/structure/reagent_dispensers/barrel/three{
+	pixel_y = 3;
+	pixel_x = -2
+	},
+/turf/open/floor/plating/f13/inside/gravel,
+/area/f13/wasteland/town)
 "flu" = (
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/f13/wood,
@@ -53141,8 +53159,8 @@
 	},
 /area/f13/wasteland)
 "qse" = (
-/obj/structure/wreck/trash/engine,
 /obj/structure/sign/brotherhoodcardboard,
+/obj/item/storage/trash_stack,
 /turf/open/floor/plating/f13/inside/gravel,
 /area/f13/wasteland/town)
 "qsh" = (
@@ -64035,8 +64053,11 @@
 /turf/open/floor/wood_common/wood_common_dark,
 /area/f13/building/abandoned/n)
 "tMm" = (
-/obj/structure/simple_door/metal/iron,
 /obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/machinery/door/airlock/engineering{
+	req_one_access_txt = "25";
+	name = "Maintenance Only"
+	},
 /turf/open/floor/plasteel/dark,
 /area/engine/workshop)
 "tMo" = (
@@ -66604,7 +66625,11 @@
 	},
 /area/f13/wasteland)
 "uAo" = (
-/obj/structure/tires/two,
+/obj/machinery/shower{
+	dir = 8;
+	pixel_y = -6;
+	pixel_x = 1
+	},
 /turf/open/floor/plating/f13/inside/gravel,
 /area/f13/wasteland/town)
 "uAp" = (
@@ -76111,8 +76136,11 @@
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/wasteland)
 "xpX" = (
-/obj/machinery/door/airlock/engineering,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/engineering/glass{
+	req_one_access_txt = "25";
+	name = "N.T. Workshop"
+	},
 /turf/open/floor/plasteel,
 /area/engine/workshop)
 "xqb" = (
@@ -105117,7 +105145,7 @@ apD
 apD
 gDa
 ncr
-voV
+fll
 chT
 dAB
 voV
@@ -105420,8 +105448,8 @@ aGd
 aGd
 aGd
 qse
+dTo
 pvq
-sTH
 voV
 apD
 voV
@@ -105721,9 +105749,9 @@ oPT
 dsJ
 rJQ
 aGd
-pwE
-xxa
 uAo
+sTH
+xxa
 voV
 rPm
 voV
